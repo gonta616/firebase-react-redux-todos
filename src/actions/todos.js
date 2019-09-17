@@ -65,7 +65,7 @@ function deleteTodo(key){
   }
 }
 
-module.exports = {
+export default {
   loadTodos,
   addTodo,
   updateTodo,
