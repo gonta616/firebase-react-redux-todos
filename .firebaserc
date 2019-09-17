@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fir-react-redux-todos"
+    "default": "firebase-todo-app",
+    "firebbase-todo-app": "fir-todo-app-10180"
   }
 }

@@ -6,18 +6,16 @@ import App from './containers/App'
 import reducer from './reducers'
 
 import thunk from 'redux-thunk'
-import createLogger from 'redux-logger';
-const logger = createLogger();
+import logger from 'redux-logger'
 
 const store = createStore(
   reducer,
-  {},
   applyMiddleware(thunk, logger)
 )
 
 render(
   <Provider store={store}>
     <App />
-  </Provider>,
+  </Provider>, 
   document.getElementById('root')
 )
