@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
+import Header from '../components/Header';
 import AddTodo from '../components/AddTodo'
 import TodoList from '../components/TodoList'
 
@@ -22,14 +23,14 @@ class App extends Component {
   render(){
     const {todos} = this.props;
     return (
-      <div>
+      <>
         <div>React + Redux Sample</div>
         <AddTodo onAddTodo={this.addTodo}  />
         <TodoList
           todos={todos}
           onDeleteClick={this.deleteTodo}
           onTodoClick={this.toggleTodo} />
-      </div>
+      </>
     )
   }
 
